@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "276294420892",
+    "project_id": "kk-s-kitchen-mobile",
+    "storage_bucket": "kk-s-kitchen-mobile.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:276294420892:android:22c993dda980d0ab59e059",
+        "android_client_info": {
+          "package_name": "xyz.bendevelops.kkskitchen"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "276294420892-esubjjp68ea3g922n0av5s7k8slh8ir0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFeiOhvb910FzCujPm8qIuX0wmWzS-RmE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "276294420892-esubjjp68ea3g922n0av5s7k8slh8ir0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
