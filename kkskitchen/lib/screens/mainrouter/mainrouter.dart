@@ -92,7 +92,7 @@ class _SkeletonState extends State<Skeleton> {
                 child: Text(''),
                 decoration: BoxDecoration(
                   image: DecorationImage(
-                    image: AssetImage('assets/images/gamer.png'),
+                    image: AssetImage('assets/images/Spatula.png'),
                     fit: BoxFit.fitHeight,
                   ),
                 ),

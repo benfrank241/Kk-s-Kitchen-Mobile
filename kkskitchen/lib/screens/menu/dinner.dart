@@ -81,7 +81,7 @@ class _DinnerState extends State<Dinner> {
           //       return Container();
           //     }),
           FutureBuilder(
-              future: storage.downloadURL('havana.jpg'),
+              future: storage.downloadURL('ricecakes.jpg'),
               builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
                 if (snapshot.connectionState == ConnectionState.done &&
                     snapshot.hasData) {
@@ -89,7 +89,7 @@ class _DinnerState extends State<Dinner> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Fluttertoast.showToast(msg: 'To be implemented');
+                          ricecakesdetails(context);
                         },
                         child: Container(
                           margin: EdgeInsets.all(8),
@@ -103,7 +103,9 @@ class _DinnerState extends State<Dinner> {
                       ),
                       Text(
                         'Rice Cakes',
-                        style: GoogleFonts.yanoneKaffeesatz(textStyle: TextStyle(color: Color.fromARGB(255, 184, 145, 227))),
+                        style: GoogleFonts.yanoneKaffeesatz(
+                            textStyle: TextStyle(
+                                color: Color.fromARGB(255, 184, 145, 227))),
                         textScaleFactor: 1.7,
                       )
                     ],
@@ -116,7 +118,7 @@ class _DinnerState extends State<Dinner> {
                 return Container();
               }),
           FutureBuilder(
-              future: storage.downloadURL('cookie.jpg'),
+              future: storage.downloadURL('pork.jpg'),
               builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
                 if (snapshot.connectionState == ConnectionState.done &&
                     snapshot.hasData) {
@@ -124,7 +126,7 @@ class _DinnerState extends State<Dinner> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Fluttertoast.showToast(msg: 'To be implemented');
+                          porkdetails(context);
                         },
                         child: Container(
                           margin: EdgeInsets.all(8),
@@ -137,8 +139,10 @@ class _DinnerState extends State<Dinner> {
                         ),
                       ),
                       Text(
-                        'Bubble Tea',
-                        style: GoogleFonts.yanoneKaffeesatz(textStyle: TextStyle(color: Color.fromARGB(255, 184, 145, 227))),
+                        'Pork & Rice',
+                        style: GoogleFonts.yanoneKaffeesatz(
+                            textStyle: TextStyle(
+                                color: Color.fromARGB(255, 184, 145, 227))),
                         textScaleFactor: 1.7,
                       )
                     ],
@@ -150,8 +154,9 @@ class _DinnerState extends State<Dinner> {
                 }
                 return Container();
               }),
-              FutureBuilder(
-              future: storage.downloadURL('IMG_1521.JPG'),
+          FutureBuilder(
+              future: storage.downloadURL(
+                  '190130-korean-fried-chicken-050-1549695542.jpg'),
               builder: (BuildContext context, AsyncSnapshot<String> snapshot) {
                 if (snapshot.connectionState == ConnectionState.done &&
                     snapshot.hasData) {
@@ -159,7 +164,7 @@ class _DinnerState extends State<Dinner> {
                     children: [
                       GestureDetector(
                         onTap: () {
-                          Fluttertoast.showToast(msg: 'To be implemented');
+                          friedchickendetails(context);
                         },
                         child: Container(
                           margin: EdgeInsets.all(8),
@@ -173,7 +178,9 @@ class _DinnerState extends State<Dinner> {
                       ),
                       Text(
                         'Fried Chicken',
-                        style: GoogleFonts.yanoneKaffeesatz(textStyle: TextStyle(color: Color.fromARGB(255, 184, 145, 227))),
+                        style: GoogleFonts.yanoneKaffeesatz(
+                            textStyle: TextStyle(
+                                color: Color.fromARGB(255, 184, 145, 227))),
                         textScaleFactor: 1.7,
                       )
                     ],
@@ -188,5 +195,60 @@ class _DinnerState extends State<Dinner> {
         ],
       ),
     );
+  }
+
+  porkdetails(context) {
+    return showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+              actions: [],
+              title: Text(
+                "tbd",
+              ));
+        });
+  }
+
+  ricecakesdetails(context) {
+    return showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+              actions: [
+                SizedBox(
+      height: 50,
+      
+      child: Stack(
+        children: <Widget>[
+          Positioned(
+        top: 0,
+        left: 100,
+        child: Container(
+        width: 99,
+        height: 50,
+        decoration: BoxDecoration(
+          color : Color.fromRGBO(230, 133, 255, 1),
+      borderRadius : BorderRadius.all(Radius.elliptical(99, 50)),
+  ),
+        child: Align(
+         child: Text("Add to cart"),)))]))],
+              title: Text(
+                "Stir fried sliced rice cakes with cabbage and bacon. Sweet and salty, this dish is flavored with garlic, premium soy sauce oyster sauce and (mild) spicy mushrooms. ",
+              )
+              );
+              
+        });
+  }
+
+  friedchickendetails(context) {
+    return showDialog(
+        context: context,
+        builder: (context) {
+          return AlertDialog(
+              actions: [],
+              title: Text(
+                "tbd",
+              ));
+        });
   }
 }
