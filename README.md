@@ -2,6 +2,8 @@
 
 Cookbook/Mobile Restaurant app which lets the user upload recipes and talk with the restaurant. Functional on both Android and IOS.
 
+Figma Design: https://www.figma.com/file/HlZGg9Qx0elZo51WzxpluG/Kk's-Kitchen?node-id=0%3A1
+
 Features: 
 
 - Upload images from both phone and google drive.
