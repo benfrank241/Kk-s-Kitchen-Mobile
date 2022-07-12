@@ -9,6 +9,9 @@ Features:
 - View different menus (breakfast, dinner, snacks, desserts)
 - Donate thousands of dollars to me.
 
+
+Misc screenshots:
+
 ![drawer](https://user-images.githubusercontent.com/62250174/178585899-3d9e2116-af0b-4935-8048-7503f0464428.png)
 ![dropdown](https://user-images.githubusercontent.com/62250174/178585900-0d8ae01d-536a-4de0-ab51-7e6964d14367.png)
 ![dinnermain](https://user-images.githubusercontent.com/62250174/178585901-6590e9cc-540e-42e6-a135-d60a40151558.png)
